@@ -2,11 +2,7 @@
 
 A CLI for downloading YT Videos or Playlists using [YoutubeExplode](https://github.com/Tyrrrz/YoutubeExplode).
 
-Features:
-
-* Headless
-* Sequential Downloads
-* Single File
+> This project is mostly unfinished and does not support async downloads.
 
 ## Quickstart
 
