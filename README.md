@@ -11,6 +11,8 @@ A CLI for downloading YT Videos or Playlists using [YoutubeExplode](https://gith
 snap install ffmpeg
 sudo snap connect ffmpeg:removable-media
 
+nix-shell -p dotnetCorePackages.dotnet_8.sdk
+
 make build
 # Target: ./bin/Release/net8.0/linux-x64/publish/YoutubeDownloaderCli
 ```
@@ -18,7 +20,7 @@ make build
 ## Usage
 
 ```
-YouTubeDownloader l "https://www.youtube.com/playlist?list=<playlist-id>" -o /tmp/playlists/playlist --limit 100 --quality 1080p
+YoutubeDownloaderCli l "https://www.youtube.com/playlist?list=<playlist-id>" -o /tmp/playlists/playlist --limit 100 --quality 1080p
 ```
 
 ## Docs
