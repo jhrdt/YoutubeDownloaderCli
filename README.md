@@ -2,7 +2,7 @@
 
 A CLI for downloading YT Videos or Playlists using [YoutubeExplode](https://github.com/Tyrrrz/YoutubeExplode).
 
-> This project is mostly unfinished and does not support async downloads.
+> This project is ~mostly~ unfinished and does not support async downloads.
 
 ## Quickstart
 
@@ -11,9 +11,7 @@ A CLI for downloading YT Videos or Playlists using [YoutubeExplode](https://gith
 snap install ffmpeg
 sudo snap connect ffmpeg:removable-media
 
-nix-shell -p dotnetCorePackages.dotnet_8.sdk
-
-make build
+nix-shell --run "just build"
 # Target: ./bin/Release/net8.0/linux-x64/publish/YoutubeDownloaderCli
 ```
 
