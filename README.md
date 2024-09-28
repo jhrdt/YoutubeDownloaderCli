@@ -4,6 +4,14 @@ A CLI for downloading YT Videos or Playlists using [YoutubeExplode](https://gith
 
 ## Quickstart
 
+### Requirements
+
+* just
+* ffmpeg
+* .NET 8 SDK
+
+### Build
+
 ```
 # OS: Ubuntu
 snap install ffmpeg
