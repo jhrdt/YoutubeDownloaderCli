@@ -8,12 +8,13 @@ A CLI for downloading YT Videos or Playlists using [YoutubeExplode](https://gith
 
 * just
 * ffmpeg
-* .NET 8 SDK
+* .NET SDK
 
 ### Build
 
+Ubuntu:
+
 ```
-# OS: Ubuntu
 snap install ffmpeg
 sudo snap connect ffmpeg:removable-media
 
@@ -22,6 +23,8 @@ nix-shell --run "just build"
 ```
 
 ## Usage
+
+Example:
 
 ```
 YoutubeDownloaderCli l "https://www.youtube.com/playlist?list=<playlist-id>" -o /tmp/playlists/playlist --limit 100 --quality 1080p
@@ -87,7 +90,3 @@ Options:
   -p, --conversion-preset <conversion-preset>  Conversion preset. Choose: VerySlow (best), Slow, Medium, Fast, VeryFast or UltraFast. [default: Medium]
   -?, -h, --help                               Show help and usage information
 ```
-
-## See also
-
-* https://github.com/Tyrrrz/YoutubeExplode
